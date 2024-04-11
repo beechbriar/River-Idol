@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>River Idol - Beecher Sanderson, 2024</title>
+    <link rel="stylesheet" href="https://use.typekit.net/otk0nar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://kit.fontawesome.com/ca778a47ae.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".fas").click(function(){
+          $(".sidebar").toggleClass("open");
+          console.log("Toggled the class!");
+        });
+      });
+      $(document).on("click", function(event){
+        if(!$(event.target).closest(".sidebar").length){
+            $(".sidebar").removeClass("open");
+            console.log("Removed main sidebar class!");
+        };
+      });
+    </script>
+  </head>
+
+  <body>
+    <!--<div class="mobilesidebar">
+      <i class="fas fa-bars">Menu</i>
+       $(".bodywosidebar").click(function() {
+          $(".sidebar").toggleClass("close");
+          console.log("Toggled the class!");
+        })
+                $(".bodywosidebar").click(function() {
+          $("#mainsidebar").hide();
+          console.log("Hid the main sidebar!");
+        })
+        $("bodywosidebar").click(function(){  
+          if ($(".sidebar").hasClass(".open")) {
+              $("sidebar").toggleClass("open"); }
+          });
+    </div>-->    
+    <div class="sidebar" id="mobiletop">
+      <i class="fas fa-bars"></i>
+      <p class="mobiletext">Menu</p>
+    </div>
+    <div class="sidebar" id="mainsidebar">
+        <nav>
+          <a class="signature" href="index.html">
+            <img src="sources/initialvector-01.png">
+        </a>  
+          <a href="lifestory.html">IN SITU MAQUETTE</a>
+          <a href="gallery.html">PROCESS WORK</a>
+          <a href="citations.html">SOURCES</a>
+      </nav>
+        </div>
+        <div class="bodywosidebar">
+        <div class="heading">
+          <p class="homepg">CHIMERA <span id="mobilebreak">PRAYER</span></p>
+          <p class="subhead">Accompanying poem for River Idol</p>
+        </div> 
+        <div class="intro">
+        <div class="maintext">      
+        <p>
+        <span id=stanzaline>rivers join, wrestle</span>
+        <span id=stanzaline>smoke and silt intertwine</span>
+        <span id=stanzaline>timeless Father of Waters</span>
+        <span id=stanzaline>carrying life,</span>
+        <span id=stanzaline>spirit</span>
+        <span id=stanzaline>given new names with no meanings</span>
+        <span id=stanzaline>from reverence to disregard</span>
+        <span id=stanzaline>now</span>
+        <span id=stanzaline>carrying death,</span>
+        <span id=stanzaline>devils</span>
+        </p>
+
+        <p>
+        <span id=stanzaline>oh, great river</span>
+        <span id=stanzaline>at this heart, one seat</span>
+        <span id=stanzaline>a token of worship</span>
+        <span id=stanzaline>memory</span>
+        <span id=stanzaline>for the spirits before and behind</span>
+        </p>
+
+        <p>
+        <span id=stanzaline>built around the prodigal</span>
+        <span id=stanzaline>mustang, caballo, soba</span>
+        <span id=stanzaline>lost and returned</span>
+        <span id=stanzaline>but this time with bloodlust</span>
+        <span id=stanzaline>willd spirit, bound</span>
+        <span id=stanzaline>saddled</span>
+        <span id=stanzaline>bucking against restraints</span>
+        </p>
+
+        <p>
+        <span id=stanzaline>the eagle's sight, wazika xowe</span>
+        <span id=stanzaline>sacred savenger</span>
+        <span id=stanzaline>stolen, divorced</span>
+        <span id=stanzaline>revered still</span>
+        <span id=stanzaline>but at the altar of consumption</span>
+        <span id=stanzaline>a vision of death</span>
+        <span id=stanzaline>broken from its cycles of rebirth</span>
+        </p>
+
+        <p>
+        <span id=stanzaline>life-source</span>
+        <span id=stanzaline>buffalo, yunush, miisiikwaha</span>
+        <span id=stanzaline>cornerstone shattered</span>
+        <span id=stanzaline>castles of skulls on the plains</span>
+        <span id=stanzaline>rivers of blood</span>
+        <span id=stanzaline>beast, then human</span>
+        <span id=stanzaline>only a vestige remains</span>
+        </p>
+
+        <p>
+        <span id=stanzaline>rattlesnake, manetoa, weh-ts'ah</span>
+        <span id=stanzaline>lashing, fanged</span>
+        <span id=stanzaline>icon of medicine and healing</span>
+        <span id=stanzaline>poisoned</span>
+        <span id=stanzaline>by cries of devil</span>
+        <span id=stanzaline>in a garden now sealed</span>
+        <span id=stanzaline>fallen from grace</span>
+        </p>
+
+        <p>
+        <span id=stanzaline>oh, great river</span>
+        <span id=stanzaline>vessel and watcher and truthsayer</span>
+        <span id=stanzaline>be enshrined as our memory</span>
+        <span id=stanzaline>join, wrestle</span>
+        <span id=stanzaline>intertwine</span>
+        </p>
+      
+        </div> 
+        </div> 
+      </div>
+
+  </body>
+
+</html>

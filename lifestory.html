@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>River Idol - Beecher Sanderson, 2024</title>
+    <link rel="stylesheet" href="https://use.typekit.net/otk0nar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://kit.fontawesome.com/ca778a47ae.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".fas").click(function(){
+          $(".sidebar").toggleClass("open");
+          console.log("Toggled the class!");
+        });
+      });
+      $(document).on("click", function(event){
+        if(!$(event.target).closest(".sidebar").length){
+            $(".sidebar").removeClass("open");
+            console.log("Removed main sidebar class!");
+        };
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="sidebar" id="mobiletop">
+      <i class="fas fa-bars"></i>
+      <p class="mobiletext">Menu</p>
+    </div>
+        <div class="sidebar">
+        <nav>
+          <a class="signature" href="index.html">
+            <img src="sources/initialvector-01.png">
+        </a>  
+          <a class="selectedpage" href="lifestory.html">IN SITU MAQUETTE</a>
+          <a href="gallery.html">PROCESS WORK</a>
+          <a href="citations.html">SOURCES</a>
+      </nav>
+        </div>
+        <div class="heading">
+          <p class="lspage">MAQUETTE</p>
+        </div> 
+        <div class="grid">    
+            <div class="support" id="portrait">
+                <img src="sources/confluenceaerial.jpeg">
+                <p class="arttag">The confluence viewed from above, with the Missouri river<span id=stanzaline>on the left and the Mississippi on the right.</span></p>
+            </div> 
+            <div class="maintext">  
+
+              <p>Unlike a "typical" bronze monument, which is often large and permanently installed in public view, River Idol fits in the hand and is intended to be used as a token of worship, buried on site or used in ritual. This makes installation maquettes challenging to render, as the installation itself is much more personal than grandiose, based on independent practices of folk religiosity.
+              </p>
+              <p>As a single object, its installation is determined by the user and highly variable; as an object that can be 3D-printed en masse, the installation capabilites can be even more varied.</p>
+            </div>
+            <!--<div class="support" id="tiles">
+              <img src="sources/alhambratiles.jpg">
+              <p class="arttag">Moorish tessellations including this one at the Alhambra inspired Escher's work with tilings of the plane. He made sketches of this and other Alhambra patterns in 1936.</p>
+            </div>-->
+            <div class="support" id="sketch">
+              <img src="sources/confluencepoint.jpeg">
+              <p class="arttag">The confluence point at Edward "Ted" and Pat Jones Confluence State Park.</p>
+            </div>
+            <div class="support" id="snakes">
+              <img src="sources/confluencetrail.jpeg">
+              <p class="arttag">The Missouri State Parks trail leading to the confluence point.</p>
+            </div> 
+
+  </body>
+
+</html>

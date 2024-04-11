@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>River Idol - Beecher Sanderson, 2024</title>
+    <link rel="stylesheet" href="https://use.typekit.net/otk0nar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://kit.fontawesome.com/ca778a47ae.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".fas").click(function(){
+          $(".sidebar").toggleClass("open");
+          console.log("Toggled the class!");
+        });
+      });
+      $(document).on("click", function(event){
+        if(!$(event.target).closest(".sidebar").length){
+            $(".sidebar").removeClass("open");
+            console.log("Removed main sidebar class!");
+        };
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="sidebar" id="mobiletop">
+      <i class="fas fa-bars"></i>
+      <p class="mobiletext">Menu</p>
+    </div>
+        <div class="sidebar">
+        <nav>
+          <a class="signature" href="index.html">
+            <img src="sources/initialvector-01.png">
+        </a>  
+          <a href="lifestory.html">IN SITU MAQUETTE</a>
+          <a href="gallery.html">PROCESS WORK</a>
+          <a href="citations.html">SOURCES</a>
+      </nav>
+        </div>
+        <div class="heading">
+          <p class="lspage">LEGACY</p>
+        </div> 
+        <div class="maintext" id="legacytext">      
+            <p class="sectiontitle" id="artcollect">In Art Collections</p>
+            <p>
+            The Escher intellectual property is controlled by the M.C. Escher Company, while exhibitions of his artworks are managed separately by the M.C. Escher Foundation.
+
+        </p>
+        <p>
+            The primary institutional collections of original works by M.C. Escher are the Escher Museum in The Hague; the National Gallery of Art (Washington, DC); the National Gallery of Canada (Ottawa); the Israel Museum (Jerusalem); and the Huis ten Bosch (Nagasaki, Japan).        </p>
+            <p class="sectiontitle">Exhibitions</p>
+            <p>
+            Despite wide popular interest, Escher was for a long time somewhat neglected in the art world; even in his native Netherlands, he was 70 before a retrospective exhibition was held. In the twenty-first century, major exhibitions have been held in cities across the world. An exhibition of his work in Rio de Janeiro attracted more than 573,000 visitors in 2011; its daily visitor count of 9,677 made it the most visited museum exhibition of the year, anywhere in the world. No major exhibition of Escher's work was held in Britain until 2015, when the Scottish National Gallery of Modern Art ran one in Edinburgh from June to September 2015, moving in October 2015 to the Dulwich Picture Gallery, London. The exhibition poster is based on Hand with Reflecting Sphere, 1935, which shows Escher in his house reflected in a handheld sphere, thus illustrating the artist, his interest in levels of reality in art (e.g., is the hand in the foreground more real than the reflected one?), perspective, and spherical geometry. The exhibition moved to Italy in 2015–2016, attracting over 500,000 visitors in Rome and Bologna, and then Milan.        </p>
+        <p class="sectiontitle">In Mathemathics & Science</p>
+        <p>
+            Doris Schattschneider identifies eleven strands of mathematical and scientific research anticipated or directly inspired by Escher. These are the classification of regular tilings using the edge relationships of tiles: two-color and two-motif tilings (counterchange symmetry or antisymmetry); color symmetry (in crystallography); metamorphosis or topological change; covering surfaces with symmetric patterns; Escher's algorithm (for generating patterns using decorated squares); creating tile shapes; local versus global definitions of regularity; symmetry of a tiling induced by the symmetry of a tile; orderliness not induced by symmetry groups; the filling of the central void in Escher's lithograph Print Gallery by H. Lenstra and B. de Smit.
+        </p>
+        <p>
+            The Pulitzer Prize-winning 1979 book Gödel, Escher, Bach by Douglas Hofstadter discusses the ideas of self-reference and strange loops, drawing on a wide range of artistic and scientific sources including Escher's art and the music of J. S. Bach.
+        </p>
+        <p>
+            The asteroid 4444 Escher was named in Escher's honor in 1985.
+        </p>
+        <p class="sectiontitle">In Popular Culture</p>
+        <p>
+            Escher's fame in popular culture grew when his work was featured by Martin Gardner in his April 1966 "Mathematical Games" column in Scientific American. Escher's works have appeared on many album covers including The Scaffold's 1969 L the P with Ascending and Descending; Mott the Hoople's eponymous 1969 record with Reptiles, Beaver & Krause's 1970 In A Wild Sanctuary with Three Worlds; and Mandrake Memorial's 1970 Puzzle with House of Stairs and (inside) Curl Up.[l] His works have similarly been used on many book covers, including some editions of Edwin Abbott's Flatland, which used Three Spheres; E. H. Gombrich's Meditations on a Hobby Horse with Horseman; Pamela Hall's Heads You Lose with Plane Filling 1; Patrick A. Horton's Mastering the Power of Story with Drawing Hands; Erich Gamma et al.'s Design Patterns: Elements of Reusable Object-oriented software with Swans; and Arthur Markman's Knowledge Representation with Reptiles. The "World of Escher" markets posters, neckties, T-shirts, and jigsaw puzzles of Escher's artworks. Both Austria and the Netherlands have issued postage stamps commemorating the artist and his works.
+        </p>
+        </div> 
+        </div> 
+
+  </body>
+
+</html>

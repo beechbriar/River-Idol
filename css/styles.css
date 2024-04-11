@@ -1,0 +1,224 @@
+html, body {
+    height: 100%;
+  }
+
+body {
+    font-family: aktiv-grotesk-condensed, sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0;
+}
+
+.sidebar {
+    width: 13%;
+    height: 100%;
+    background-color:rgb(241, 231, 221);
+    float: left;
+    position: fixed;
+}
+
+nav a {
+    display: block;
+    margin-left: 15%;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    line-height: 35px;
+}
+
+.heading {
+    font-size: 70px;
+    margin-left: 16.25%;
+    line-height: 0px
+}
+
+.subhead {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 0;
+    padding-bottom: 25px;
+}
+
+.maintext {
+    font-weight: 400;
+    width: 40%;
+    margin-left: 16.5%;
+    padding-bottom: 3%;
+}
+
+.arttag {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.dayandnight .arttag {
+    margin: 10px 0 80px 16.5%;
+}
+
+.dayandnight img { 
+    width: 80%;
+    max-width: 100%;
+    padding-left: 16.5%;
+}
+
+.cycle {
+    float: right;
+    width: 37%;
+    padding-right:  3%;
+    max-width: 100%;
+    padding-bottom: 3%;
+}
+
+.cycle img {
+    width: 100%;
+}
+
+.cycle .arttag {
+    margin-top: 10px;
+}
+
+nav img {
+    width: 70%;
+    margin: 33% 0 15% 0;
+}
+
+.selectedpage {
+    font-weight: 400;
+}
+
+.lspage {
+    padding-top: 95px;
+    margin-top: 0
+}
+
+.homepg {
+    padding-top: 85px;
+    margin-top: 0;
+    
+}
+
+.support img {
+    width: 100%;
+}
+
+.support {
+    padding-right: 3%;
+    float: right;
+    padding-top: 0px;
+}
+
+.sectiontitle {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+#rtcollect {
+    margin-top: 90px;
+}
+
+#stanzaline::after{
+    content: "\a";
+    white-space: pre;
+}
+
+#portrait {
+    width: 46%;
+    margin-left: 3%;
+}
+
+#sketch {
+    width: 50%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+#snakes {
+    width: 45%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+@media only screen and (max-width: 430px) {
+    /* For mobile phones: */
+    .maintext {
+      width: 90%;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-left: 0;
+    }
+    .sidebar {
+        width: 40%;
+        transform: translateX(-200px);
+        transition: all .5s;
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    #mobiletop {
+        transform: translateX(0);
+        width: 100%;
+        height: 7%;
+        background-color:rgb(241, 231, 221);
+        position: fixed;
+    }
+    #mobiletop.open {
+        transform: translateY(-100px);
+    }
+    .fas {
+        padding: 3.5% 3.5% 3.5% 5%;
+        float: left;
+    }
+    .mobiletext {
+        margin: 0;
+        padding: 3%;
+    }
+    .support {
+        float: none;
+        padding: none;
+    }
+    div #snakes {
+        width: 90%;
+        padding: 5%;
+    }
+    div #sketch {
+        width: 90%;
+        padding: 5%;
+    }
+    div #portrait {
+        width: 90%;
+        padding: 5%;
+    }
+    .sectiontitle {
+        margin-top: 20px;
+    }
+    div .cycle {
+        float: none;
+        padding: none;
+        width: 90%;
+        padding: 5%;
+    }
+    .dayandnight img {
+        float: none;
+        width: 90%;
+        padding: 5% 5% 0 5%;
+    }
+    .dayandnight .arttag {
+        margin: 5px 0 30px 5%;
+    }
+    .heading {
+        margin-left: 5%;
+        padding-top: 50px;
+    }
+    div .gallerygrid {
+        float: none;
+        width: 90%;
+        padding: 5% 5% 0 5%;
+    }
+    #mobilebreak {
+        content: "\a";
+        white-space: pre;
+    }
+  }

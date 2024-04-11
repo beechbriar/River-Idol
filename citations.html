@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>River Idol - Beecher Sanderson, 2024</title>
+    <link rel="stylesheet" href="https://use.typekit.net/otk0nar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://kit.fontawesome.com/ca778a47ae.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".fas").click(function(){
+          $(".sidebar").toggleClass("open");
+          console.log("Toggled the class!");
+        });
+      });
+      $(document).on("click", function(event){
+        if(!$(event.target).closest(".sidebar").length){
+            $(".sidebar").removeClass("open");
+            console.log("Removed main sidebar class!");
+        };
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="sidebar" id="mobiletop">
+      <i class="fas fa-bars"></i>
+      <p class="mobiletext">Menu</p>
+    </div>
+        <div class="sidebar">
+        <nav>
+          <a class="signature" href="index.html">
+            <img src="sources/initialvector-01.png">
+        </a>  
+          <a href="lifestory.html">IN SITU MAQUETTE</a>
+          <a href="gallery.html">PROCESS WORK</a>
+          <a class="selectedpage" href="citations.html">SOURCES</a>
+      </nav>
+        </div>
+        <div class="heading">
+          <p class="lspage">SOURCES</p>
+        </div> 
+        <div class="maintext">
+          <p class="sectiontitle">Under construction</p>
+          <p></p>
+        </div>
+        </div> 
+
+  </body>
+
+</html>
