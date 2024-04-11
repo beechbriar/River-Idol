@@ -221,5 +221,7 @@ nav img {
         width: 90%;
         padding: 5% 5% 0 5%;
     }
-    
+    #mobilebreak {
+        padding-top: 10px;
+    }
   }
